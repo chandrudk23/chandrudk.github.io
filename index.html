@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandru Duraikannan — UI/UX Designer</title>
+  <meta name="description" content="Chandru Duraikannan is a UI/UX Designer specialising in Product Design and Visual Design. Based in Salem, India." />
+  <meta name="keywords" content="UI/UX Designer, Product Design, Visual Design, Figma, Mobile App Design, Chandru Duraikannan" />
+  <meta name="author" content="Chandru Duraikannan" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Chandru Duraikannan — UI/UX Designer" />
+  <meta property="og:description" content="UI/UX Designer working in Product Design and Visual Design. Clear, structured, user-centred digital experiences." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts: Montserrat only -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════ HEADER / NAV ══════════════════════════ -->
+<header class="site-header" id="site-header" role="banner">
+  <div class="header-inner">
+    <a href="#hero" class="header-logo" aria-label="Chandru Duraikannan — Home">
+      Chandru<span class="logo-dot">.</span>
+    </a>
+
+    <nav class="header-nav" role="navigation" aria-label="Main navigation">
+      <a href="#uiux-design" class="nav-link">Work</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="assets/Chandru Duraikannan Resume.pdf" class="nav-link nav-resume" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+  <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&#10005;</button>
+  <nav>
+    <a href="#uiux-design" class="mobile-nav-link">Work</a>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#experience" class="mobile-nav-link">Experience</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <a href="assets/Chandru Duraikannan Resume.pdf" class="mobile-nav-link" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+  </nav>
+</div>
+<div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+
+<!-- ══════════════════════════ HERO ══════════════════════════ -->
+<section id="hero" class="hero" aria-label="Introduction">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-availability">
+        <span class="availability-dot" aria-hidden="true"></span>
+        Available for opportunities
+      </div>
+
+      <h1 class="hero-name">
+        CHANDRU DURAIKANNAN
+      </h1>
+
+      <div class="hero-role">
+        <span>UI/UX Designer</span>
+        <span class="role-sep" aria-hidden="true">&middot;</span>
+        <span>Product Design</span>
+        <span class="role-sep" aria-hidden="true">&middot;</span>
+        <span>Visual Design</span>
+      </div>
+
+      <p class="hero-statement">
+        I design clear, structured digital experiences for mobile and web platforms &mdash; with a focus on usability, user flows, and visual detail. Based in Salem, India.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#uiux-design" class="btn btn-primary" id="hero-view-work">View Work</a>
+        <a href="#contact" class="btn btn-outline" id="hero-contact">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="meta-label">Based in</span>
+        <span class="meta-value">Salem, India</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="meta-label">Specialisation</span>
+        <span class="meta-value">Mobile &amp; Web UI/UX</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="meta-label">Education</span>
+        <span class="meta-value">MSc Data Science</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ UI/UX DESIGN ══════════════════════════ -->
+<section id="uiux-design" class="section section-uiux" aria-labelledby="uiux-heading">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <div class="section-label">Primary Portfolio</div>
+      <h2 class="section-title" id="uiux-heading">UI/UX DESIGN</h2>
+      <p class="section-desc">Selected product design and user experience work.</p>
+    </div>
+
+    <!-- PROJECT 01: Rentify (Text left, Large visual right) -->
+    <article class="project project--split reveal" id="project-rentify" aria-labelledby="rentify-title">
+      <div class="project-text">
+        <div class="project-header">
+          <span class="project-number" aria-hidden="true">01</span>
+          <div class="project-tags">
+            <span class="tag">Rental App</span>
+            <span class="tag">Admin Dashboard</span>
+            <span class="tag">Figma</span>
+          </div>
+        </div>
+        <h3 class="project-title" id="rentify-title">Rentify</h3>
+        <p class="project-subtitle">Product Rental Application &amp; Admin Dashboard</p>
+        <p class="project-desc">
+          A product rental application and management platform for cameras, laptops, furniture, and appliances. Features flexible rental duration plans (daily, weekly, monthly), simple checkout, and a responsive admin dashboard for inventory, order tracking, and revenue analytics.
+        </p>
+        <div class="project-highlights">
+          <div class="highlight-label">Project Highlights</div>
+          <ul class="highlight-list">
+            <li>Flexible rental duration selection &amp; transparent deposit pricing</li>
+            <li>Responsive admin dashboard for inventory and order monitoring</li>
+            <li>High-fidelity mobile app screens and web controls built in Figma</li>
+            <li>Minimal visual identity using bold typography and high-contrast layouts</li>
+          </ul>
+        </div>
+        <div class="project-actions">
+          <a href="projects/rentify.html" class="btn btn-primary btn-sm" id="rentify-case-study">View Case Study</a>
+          <a href="https://www.behance.net/gallery/250725633/RENTIFY-Rental-Management-Admin-Dashboard" class="btn btn-ghost btn-sm" target="_blank" rel="noopener noreferrer">Behance ↗</a>
+        </div>
+      </div>
+
+      <div class="project-visual project-visual--rentify">
+        <div class="project-image-wrap">
+          <img src="assets/rentify_behance_dashboard.png" alt="Rentify Rental Management Admin Dashboard UI Design" class="project-real-img" />
+        </div>
+        <div class="project-category-tag">E-Commerce &amp; Rental &middot; 2026</div>
+      </div>
+    </article>
+
+    <!-- PROJECT 02: CampusConnect (Text left, Wide visual right) -->
+    <article class="project project--split project--campusconnect reveal" id="project-campusconnect" aria-labelledby="campus-title">
+      <div class="project-text">
+        <div class="project-header">
+          <span class="project-number" aria-hidden="true">02</span>
+          <div class="project-tags">
+            <span class="tag">Mobile App</span>
+            <span class="tag">Multi-Role UI</span>
+            <span class="tag">Figma</span>
+          </div>
+        </div>
+        <h3 class="project-title" id="campus-title">CampusConnect</h3>
+        <p class="project-subtitle">College Administration Platform</p>
+        <p class="project-desc">
+          A college administration mobile app designed for students, faculty, and administrators. The platform centralises academic communication, attendance tracking, and task management into role-based interfaces that streamline administrative workflows.
+        </p>
+        <div class="project-highlights">
+          <div class="highlight-label">Project Highlights</div>
+          <ul class="highlight-list">
+            <li>Role-based dashboards mapped for students, faculty, and administrators</li>
+            <li>Task prioritization and attendance tracking interfaces</li>
+            <li>20+ wireframes and high-fidelity screens created in Figma</li>
+            <li>Streamlined administrative workflows validated through peer feedback</li>
+          </ul>
+        </div>
+        <div class="project-actions">
+          <a href="projects/campusconnect.html" class="btn btn-primary btn-sm" id="campus-case-study">View Case Study</a>
+          <a href="https://www.behance.net/gallery/243077455/College-Administration-app" class="btn btn-ghost btn-sm" target="_blank" rel="noopener noreferrer">Behance ↗</a>
+        </div>
+      </div>
+
+      <div class="project-visual project-visual--campus">
+        <div class="project-image-wrap project-image-wrap--campus">
+          <img src="assets/campusconnect_behance_top.png" alt="CampusConnect College Administration Mobile App Interface" class="project-real-img project-real-img--campus" />
+        </div>
+        <div class="project-category-tag">Academic Platform &middot; 2024</div>
+      </div>
+    </article>
+
+    <!-- PROJECT 03: VRV Aircon (Large project number + text, wide website visual) -->
+    <article class="project project--wide reveal" id="project-vrv" aria-labelledby="vrv-title">
+      <div class="project-wide-header">
+        <div class="project-header">
+          <span class="project-number" aria-hidden="true">03</span>
+          <div class="project-tags">
+            <span class="tag">Website Redesign</span>
+            <span class="tag">UX Audit</span>
+            <span class="tag">B2B</span>
+          </div>
+        </div>
+        <h3 class="project-title" id="vrv-title">VRV Aircon</h3>
+        <p class="project-subtitle">B2B HVAC Website Redesign &amp; UX Audit</p>
+      </div>
+      <div class="project-wide-body">
+        <div class="project-wide-text">
+          <p class="project-desc">
+            A website redesign for a B2B commercial air conditioning company. Commenced with a structured UX audit that identified 5 key areas affecting navigation and product clarity, progressing to a restructured information architecture and complete responsive layout guidelines.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-label">Project Highlights</div>
+            <ul class="highlight-list">
+              <li>Audited existing B2B site and identified 5 key navigation friction points</li>
+              <li>Restructured information architecture for clearer product discoverability</li>
+              <li>Delivered complete design handoff with component specs &amp; responsive guidelines</li>
+              <li>Approved by client after a single revision cycle</li>
+            </ul>
+          </div>
+          <div class="project-actions">
+            <a href="projects/vrv-aircon.html" class="btn btn-primary btn-sm" id="vrv-case-study">View Case Study</a>
+          </div>
+        </div>
+        <div class="project-wide-visual">
+          <div class="project-image-wrap project-image-wrap--vrv" style="border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--border); box-shadow:0 4px 20px rgba(23,74,126,0.06);">
+            <img src="assets/vrv-aircon.jpeg" alt="VRV Aircon B2B HVAC Website Redesign Interface" class="project-real-img" style="width:100%; height:auto; display:block;" />
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 04: Smart Bankers Institute (Text + browser screenshot + Live website link) -->
+    <article class="project project--split reveal" id="project-sbi" aria-labelledby="sbi-title">
+      <div class="project-text">
+        <div class="project-header">
+          <span class="project-number" aria-hidden="true">04</span>
+          <div class="project-tags">
+            <span class="tag">Web Design</span>
+            <span class="tag">Brand Identity</span>
+            <span class="tag">Live Website</span>
+          </div>
+        </div>
+        <h3 class="project-title" id="sbi-title">Smart Bankers Institute</h3>
+        <p class="project-subtitle">Educational Platform UI &amp; Web Design</p>
+        <p class="project-desc">
+          Official website and brand identity design for an educational banking training institute. The work focused on structuring course information clearly, establishing a cohesive visual identity, and delivering a responsive website to support student enquiries and enrolment.
+        </p>
+        <div class="project-highlights">
+          <div class="highlight-label">Project Highlights</div>
+          <ul class="highlight-list">
+            <li>Official logo design and visual branding for banking education</li>
+            <li>Structured content hierarchy for course catalog and registration</li>
+            <li>Responsive web design built for cross-device readability</li>
+            <li>Live website deployed and active online</li>
+          </ul>
+        </div>
+        <div class="project-actions">
+          <a href="https://smartbankersinstitute.com/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" id="sbi-live">View Live Website ↗</a>
+          <a href="projects/smart-bankers.html" class="btn btn-ghost btn-sm" id="sbi-detail">Case Study</a>
+        </div>
+      </div>
+
+      <div class="project-visual project-visual--sbi">
+        <div class="project-image-wrap">
+          <img src="assets/smart_bankers_live.png" alt="Smart Bankers Institute Official Website Design" class="project-real-img" />
+        </div>
+        <div class="project-category-tag">Educational &middot; Live Website</div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- Section divider -->
+<div class="section-divider" aria-hidden="true">
+  <div class="container">
+    <div class="divider-line"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════ GRAPHIC DESIGN ══════════════════════════ -->
+<section id="graphic-design" class="section section-gd" aria-labelledby="gd-heading">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <div class="section-label">Secondary Portfolio</div>
+      <h2 class="section-title" id="gd-heading">GRAPHIC DESIGN</h2>
+      <p class="section-desc">Selected brand identity, marketing creatives, and promotional designs.</p>
+    </div>
+
+    <div class="gd-grid">
+
+      <!-- Swaragh Technologies -->
+      <article class="gd-card gd-card--featured reveal" id="gd-swaragh" aria-labelledby="swaragh-title">
+        <div class="gd-card-image-gallery">
+          <img src="assets/swaragh_web.jpeg" alt="Swaragh Technologies Homepage Web Design" class="gd-real-image gd-real-image--main" loading="lazy" />
+          <div class="gd-sub-images">
+            <img src="assets/swaragh_logo.png" alt="Swaragh Technologies Logo Redesign" class="gd-sub-img" loading="lazy" />
+            <img src="assets/swaragh_social.jpeg" alt="Swaragh Technologies Social Media Banner Creative" class="gd-sub-img" loading="lazy" />
+          </div>
+        </div>
+        <div class="gd-card-body">
+          <div class="gd-card-meta">Brand Identity &amp; Web Design &middot; 2024</div>
+          <h3 class="gd-card-title" id="swaragh-title">Swaragh Technologies</h3>
+          <p class="gd-card-desc">Logo redesign, social media advertising templates, and homepage web design for a technology company. Work covered brand refresh, digital marketing assets, and responsive UI layout.</p>
+          <div class="gd-card-tags">
+            <span class="tag tag-sm">Logo Design</span>
+            <span class="tag tag-sm">Social Media</span>
+            <span class="tag tag-sm">Web Design</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- KP Webtech -->
+      <article class="gd-card reveal" id="gd-kpwebtech" aria-labelledby="kp-title">
+        <div class="gd-card-image gd-card-image--kp">
+          <img
+            src="assets/IMG-20260903-WA0004.jpg.jpeg"
+            alt="KP Webtech promotional flyer — 'We Build Digital Success' — two-column layout with service list and brand elements"
+            class="gd-real-image"
+            loading="lazy"
+          />
+        </div>
+        <div class="gd-card-body">
+          <div class="gd-card-meta">Marketing Creative &middot; 2024</div>
+          <h3 class="gd-card-title" id="kp-title">KP Webtech</h3>
+          <p class="gd-card-desc">Promotional flyer for a web development agency. Two-column print and digital layout with strong visual hierarchy, brand colors, and structured service presentation.</p>
+          <div class="gd-card-tags">
+            <span class="tag tag-sm">Print Design</span>
+            <span class="tag tag-sm">Digital Flyer</span>
+            <span class="tag tag-sm">Photoshop</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Rentify Promotional Campaign -->
+      <article class="gd-card reveal" id="gd-rentify-posters" aria-labelledby="rentify-poster-title">
+        <div class="gd-card-image-gallery">
+          <img src="assets/rentify_poster_1.jpeg" alt="Rentify Product Rental Marketing Poster Design 1" class="gd-real-image gd-real-image--half" loading="lazy" />
+          <img src="assets/rentify_poster_2.jpeg" alt="Rentify Product Rental Marketing Poster Design 2" class="gd-real-image gd-real-image--half" loading="lazy" />
+        </div>
+        <div class="gd-card-body">
+          <div class="gd-card-meta">App Marketing Posters &middot; 2024</div>
+          <h3 class="gd-card-title" id="rentify-poster-title">Rentify &mdash; Promotional Campaign</h3>
+          <p class="gd-card-desc">Marketing poster campaign created to support the Rentify app launch. High-contrast, print-ready promotional creatives communicating app benefits and rental categories.</p>
+          <div class="gd-card-tags">
+            <span class="tag tag-sm">Poster Design</span>
+            <span class="tag tag-sm">Marketing</span>
+            <span class="tag tag-sm">Figma</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="gd-footer">
+      <p class="gd-footer-note">
+        More graphic design work on
+        <a href="https://www.behance.net/chandruduraika" target="_blank" rel="noopener noreferrer" class="inline-link">Behance ↗</a>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Section divider -->
+<div class="section-divider" aria-hidden="true">
+  <div class="container">
+    <div class="divider-line"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════ ABOUT ══════════════════════════ -->
+<section id="about" class="section section-about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-text reveal">
+        <div class="section-label">About</div>
+        <h2 class="section-title" id="about-heading">A bit about me</h2>
+        <p class="about-para">
+          I'm a UI/UX Designer based in Salem, India. My primary focus is on Product Design and Visual Design &mdash; building digital interfaces that are clear, structured, readable, and easy to navigate.
+        </p>
+        <p class="about-para">
+          I hold a Master's degree in Data Science from Periyar University with an undergraduate background in Statistics. That analytical foundation shapes how I approach design: I look at information hierarchy, task flows, and structure before adding visual elements.
+        </p>
+        <p class="about-para">
+          I am open to UI/UX and product design opportunities &mdash; freelance or full-time &mdash; where I can contribute thoughtful design work and collaborate with product teams.
+        </p>
+
+        <div class="about-skills">
+          <div class="skills-col">
+            <div class="skills-group-label">UI/UX</div>
+            <ul class="skills-list">
+              <li>User Interface Design</li>
+              <li>User Experience Design</li>
+              <li>Wireframing &amp; Prototyping</li>
+              <li>Information Architecture</li>
+              <li>User Research</li>
+              <li>Responsive Web Design</li>
+            </ul>
+          </div>
+          <div class="skills-col">
+            <div class="skills-group-label">Visual</div>
+            <ul class="skills-list">
+              <li>Visual Design</li>
+              <li>Graphic Design</li>
+              <li>Brand Identity</li>
+              <li>Marketing Creatives</li>
+              <li>Design Systems</li>
+            </ul>
+          </div>
+          <div class="skills-col">
+            <div class="skills-group-label">Tools</div>
+            <ul class="skills-list">
+              <li>Figma</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe XD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-aside reveal">
+        <div class="about-card">
+          <div class="about-card-label">Education</div>
+          <div class="about-edu-item">
+            <div class="edu-degree">MSc Data Science</div>
+            <div class="edu-institution">Periyar University, Salem (2024 &ndash; 2026)</div>
+          </div>
+          <div class="about-edu-item" style="margin-top:12px;">
+            <div class="edu-degree">BSc Statistics</div>
+            <div class="edu-institution">Government Arts College, Coimbatore (2020 &ndash; 2023)</div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-label">Certifications</div>
+          <div class="about-edu-item">
+            <div class="edu-degree">UI/UX Design Fundamentals</div>
+            <div class="edu-institution">Coursera</div>
+          </div>
+          <div class="about-edu-item" style="margin-top:8px;">
+            <div class="edu-degree">Introduction to Figma</div>
+            <div class="edu-institution">Coursera</div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-label">Location</div>
+          <div class="about-edu-item">
+            <div class="edu-degree">Salem, Tamil Nadu, India</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ EXPERIENCE ══════════════════════════ -->
+<section id="experience" class="section section-experience" aria-labelledby="exp-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Background</div>
+      <h2 class="section-title" id="exp-heading">Experience</h2>
+    </div>
+
+    <div class="experience-list">
+
+      <!-- Internship Experience -->
+      <div class="exp-item reveal" id="exp-internship">
+        <div class="exp-timeline">
+          <div class="exp-dot" aria-hidden="true"></div>
+          <div class="exp-line" aria-hidden="true"></div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-header">
+            <div class="exp-role">UI/UX Designer - Intern</div>
+            <div class="exp-period">Feb 2026 &mdash; May 2026</div>
+          </div>
+          <div class="exp-company">Least Action Company, Vellore</div>
+          <p class="exp-desc">
+            Collaborated with the product team to design and iterate on user interface components for internal tools, translating business requirements into wireframes and interactive prototypes in Adobe XD. Conducted usability reviews to refine interface clarity across key user screens.
+          </p>
+        </div>
+      </div>
+
+      <!-- Freelance / Projects -->
+      <div class="exp-item reveal" id="exp-freelance">
+        <div class="exp-timeline">
+          <div class="exp-dot" aria-hidden="true"></div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-header">
+            <div class="exp-role">UI/UX &amp; Graphic Designer</div>
+            <div class="exp-period">2024 &mdash; Present</div>
+          </div>
+          <div class="exp-company">Freelance &amp; Client Projects</div>
+          <p class="exp-desc">
+            Delivering end-to-end UI/UX and visual design projects for web platforms and mobile applications. Specialising in Figma component design, wireframing, role-based dashboards, and brand identity.
+          </p>
+          <div class="exp-projects-ref">
+            <span class="exp-projects-label">Featured Projects:</span>
+            Rentify &middot; CampusConnect &middot; VRV Aircon &middot; Smart Bankers Institute
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ RESUME ══════════════════════════ -->
+<section id="resume" class="section section-resume" aria-labelledby="resume-heading">
+  <div class="container">
+    <div class="resume-inner reveal">
+      <div class="resume-text">
+        <div class="section-label">Document</div>
+        <h2 class="section-title" id="resume-heading">Resume</h2>
+        <p class="resume-desc">
+          Download or view my complete resume detailing experience, education, skills, and projects.
+        </p>
+      </div>
+      <div class="resume-actions">
+        <a href="assets/Chandru Duraikannan Resume.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer" id="resume-view">View Resume ↗</a>
+        <a href="assets/Chandru Duraikannan Resume.pdf" class="btn btn-outline" download id="resume-download">Download PDF</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ CONTACT ══════════════════════════ -->
+<section id="contact" class="section section-contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-text reveal">
+        <div class="section-label">Let's Talk</div>
+        <h2 class="contact-heading" id="contact-heading">Get in Touch</h2>
+        <p class="contact-sub">
+          Open to UI/UX and product design opportunities. Feel free to reach out via email or connect on LinkedIn.
+        </p>
+      </div>
+
+      <div class="contact-links reveal">
+        <a href="mailto:chandrudk2309@gmail.com" class="contact-link-item" id="contact-email">
+          <div class="contact-link-label">Email</div>
+          <div class="contact-link-value">chandrudk2309@gmail.com</div>
+        </a>
+        <a href="tel:+918695511219" class="contact-link-item" id="contact-phone">
+          <div class="contact-link-label">Phone</div>
+          <div class="contact-link-value">+91 8695511219</div>
+        </a>
+        <a href="https://www.linkedin.com/in/chandru-duraikannan" class="contact-link-item" target="_blank" rel="noopener noreferrer" id="contact-linkedin">
+          <div class="contact-link-label">LinkedIn</div>
+          <div class="contact-link-value">chandru-duraikannan ↗</div>
+        </a>
+        <a href="https://www.behance.net/chandruduraika" class="contact-link-item" target="_blank" rel="noopener noreferrer" id="contact-behance">
+          <div class="contact-link-label">Behance</div>
+          <div class="contact-link-value">chandruduraika ↗</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ FOOTER ══════════════════════════ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-name">Chandru Duraikannan</span>
+        <span class="footer-role">UI/UX Designer</span>
+      </div>
+      <div class="footer-right">
+        <span class="footer-note">Based in Salem, India</span>
+        <span class="footer-copy">&copy; 2024 &ndash; 2026</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VRV Aircon — Website Redesign | Chandru Duraikannan</title>
+  <meta name="description" content="VRV Aircon B2B HVAC website redesign and UX audit case study by Chandru Duraikannan — information architecture, wireframes, and responsive UI design." />
+  <meta name="author" content="Chandru Duraikannan" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+
+<header class="site-header" id="site-header" role="banner">
+  <div class="header-inner">
+    <a href="../index.html" class="header-logo" aria-label="Chandru Duraikannan — Home">
+      Chandru<span class="logo-dot">.</span>
+    </a>
+    <nav class="header-nav" role="navigation" aria-label="Main navigation">
+      <a href="../index.html#uiux-design" class="nav-link">Work</a>
+      <a href="../index.html#about" class="nav-link">About</a>
+      <a href="../index.html#contact" class="nav-link">Contact</a>
+      <a href="../assets/Chandru Duraikannan Resume.pdf" class="nav-link nav-resume" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&#10005;</button>
+  <nav>
+    <a href="../index.html#uiux-design" class="mobile-nav-link">Work</a>
+    <a href="../index.html#about" class="mobile-nav-link">About</a>
+    <a href="../index.html#contact" class="mobile-nav-link">Contact</a>
+    <a href="../assets/Chandru Duraikannan Resume.pdf" class="mobile-nav-link" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+  </nav>
+</div>
+<div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+
+<main class="cs-main">
+
+  <section class="cs-intro" aria-label="Project overview">
+    <div class="container">
+      <a href="../index.html#uiux-design" class="cs-back-link">&#8592; Back to Work</a>
+      <div class="cs-intro-inner">
+        <div class="cs-intro-text">
+          <div class="section-label">UI/UX Design &middot; 03</div>
+          <h1 class="cs-project-title">VRV Aircon</h1>
+          <p class="cs-project-subtitle">B2B HVAC Website Redesign &amp; UX Audit</p>
+          <p class="cs-project-summary">
+            A structured website redesign for a B2B air conditioning company, beginning
+            with an audit of the existing site to identify friction points and leading
+            to a responsive high-fidelity redesign with formal handoff documentation.
+          </p>
+        </div>
+        <div class="cs-meta-grid">
+          <div class="cs-meta-item">
+            <div class="cs-meta-label">Role</div>
+            <div class="cs-meta-value">UI/UX Designer</div>
+          </div>
+          <div class="cs-meta-item">
+            <div class="cs-meta-label">Type</div>
+            <div class="cs-meta-value">Website Redesign</div>
+          </div>
+          <div class="cs-meta-item">
+            <div class="cs-meta-label">Tools</div>
+            <div class="cs-meta-value">Figma</div>
+          </div>
+          <div class="cs-meta-item">
+            <div class="cs-meta-label">Category</div>
+            <div class="cs-meta-value">B2B &amp; Industrial</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Visual -->
+  <div class="cs-hero-visual" aria-label="VRV Aircon B2B HVAC Redesigned Website Interface Showcase">
+    <div class="container">
+      <div class="cs-real-hero-container">
+        <img src="../assets/vrv-aircon.jpeg" alt="VRV Aircon B2B HVAC Redesigned Web Design Interface" class="cs-real-image" />
+      </div>
+    </div>
+  </div>
+
+  <div class="container cs-content-container">
+
+    <section class="cs-section" aria-labelledby="vrv-overview-heading">
+      <div class="cs-section-header">
+        <div class="cs-section-num">01</div>
+        <h2 class="cs-section-title" id="vrv-overview-heading">Overview</h2>
+      </div>
+      <div class="cs-section-body">
+        <p class="cs-paragraph">
+          VRV Aircon is a B2B air conditioning company. The existing website had
+          accumulated several usability problems over time: unclear product hierarchy,
+          inconsistent navigation, and a visual design that didn't communicate the
+          company's expertise effectively.
+        </p>
+        <p class="cs-paragraph">
+          This project followed a structured process: audit the existing experience,
+          identify and prioritise the key friction points, restructure the information
+          architecture, wireframe the key pages, and produce a responsive high-fidelity
+          redesign with handoff documentation.
+        </p>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="vrv-audit-heading">
+      <div class="cs-section-header">
+        <div class="cs-section-num">02</div>
+        <h2 class="cs-section-title" id="vrv-audit-heading">UX Audit</h2>
+      </div>
+      <div class="cs-section-body">
+        <p class="cs-paragraph">
+          The audit evaluated the existing website against usability heuristics and
+          basic task-completion criteria. The key friction points identified:
+        </p>
+        <ul class="cs-insight-list">
+          <li>
+            <strong>No clear product hierarchy</strong> &mdash; product categories and
+            individual products were presented at the same visual level, making
+            navigation confusing for new visitors.
+          </li>
+          <li>
+            <strong>Weak navigation structure</strong> &mdash; the main navigation
+            did not reflect how users would logically approach finding an air
+            conditioning solution (by system type, application, or brand).
+          </li>
+          <li>
+            <strong>Poor visual hierarchy on the homepage</strong> &mdash; too many
+            competing elements without a clear focal point or primary call to action.
+          </li>
+          <li>
+            <strong>No responsive adaptation</strong> &mdash; the site was not
+            optimised for mobile, a significant issue for B2B buyers who increasingly
+            use mobile devices for initial research.
+          </li>
+          <li>
+            <strong>Contact and inquiry friction</strong> &mdash; the process for
+            getting in touch or requesting a quote was not clearly surfaced and
+            required too many steps to reach.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="vrv-ia-heading">
+      <div class="cs-section-header">
+        <div class="cs-section-num">03</div>
+        <h2 class="cs-section-title" id="vrv-ia-heading">Information Architecture</h2>
+      </div>
+      <div class="cs-section-body">
+        <p class="cs-paragraph">
+          The restructured IA organises the site around user intent rather than
+          product inventory. A B2B buyer typically arrives at the site with a
+          general need (e.g., commercial cooling for a large space) and needs
+          to quickly understand what's available and how to engage.
+        </p>
+        <div class="cs-ia-diagram">
+          <div class="cs-ia-node cs-ia-node--root">VRV Aircon Website</div>
+          <div class="cs-ia-branches">
+            <div class="cs-ia-branch">
+              <div class="cs-ia-node">Home</div>
+              <div class="cs-ia-sub-nodes">
+                <div class="cs-ia-sub">Hero + CTA</div>
+                <div class="cs-ia-sub">Products Overview</div>
+                <div class="cs-ia-sub">Why VRV</div>
+              </div>
+            </div>
+            <div class="cs-ia-branch">
+              <div class="cs-ia-node">Products</div>
+              <div class="cs-ia-sub-nodes">
+                <div class="cs-ia-sub">By Category</div>
+                <div class="cs-ia-sub">Product Detail</div>
+                <div class="cs-ia-sub">Specifications</div>
+              </div>
+            </div>
+            <div class="cs-ia-branch">
+              <div class="cs-ia-node">Services</div>
+              <div class="cs-ia-sub-nodes">
+                <div class="cs-ia-sub">Installation</div>
+                <div class="cs-ia-sub">Maintenance</div>
+              </div>
+            </div>
+            <div class="cs-ia-branch">
+              <div class="cs-ia-node">About</div>
+              <div class="cs-ia-sub-nodes">
+                <div class="cs-ia-sub">Company</div>
+                <div class="cs-ia-sub">Projects</div>
+              </div>
+            </div>
+            <div class="cs-ia-branch">
+              <div class="cs-ia-node cs-ia-node--accent" style="background:var(--accent-dark);color:#fff;">Contact</div>
+              <div class="cs-ia-sub-nodes">
+                <div class="cs-ia-sub">Get a Quote</div>
+                <div class="cs-ia-sub">Enquiry Form</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="cs-paragraph">
+          Contact and quotation were elevated to primary navigation with a prominent
+          CTA throughout the site, reflecting the business priority of generating
+          qualified leads.
+        </p>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="vrv-wireframes-heading">
+      <div class="cs-section-header">
+        <div class="cs-section-num">04</div>
+        <h2 class="cs-section-title" id="vrv-wireframes-heading">Wireframes</h2>
+      </div>
+      <div class="cs-section-body">
+        <p class="cs-paragraph">
+          Wireframes were produced in Figma for five key pages: Homepage, Products Category,
+          Product Detail, Services, and Contact. The primary focus was establishing
+          clear visual hierarchy and ensuring the primary CTA (Get a Quote) was
+          accessible without excessive scrolling.
+        </p>
+        <div class="cs-two-col" style="margin-top:16px;">
+          <div class="cs-card">
+            <h3 class="cs-card-title">Homepage &amp; Lead Generation Wireframing</h3>
+            <ul class="cs-list">
+              <li><strong>Focal Point Hero:</strong> Positioned key HVAC capabilities and instant quotation CTAs above the fold to capture high-intent B2B visitors.</li>
+              <li><strong>Product Categories:</strong> Grouped VRV systems, commercial split units, and chiller plants into scannable visual modules rather than plain text links.</li>
+            </ul>
+          </div>
+          <div class="cs-card">
+            <h3 class="cs-card-title">Catalogue &amp; Specification Wireframing</h3>
+            <ul class="cs-list">
+              <li><strong>Parametric Filters:</strong> Designed left-hand filters for capacity, tonnage, and application space (Commercial vs Industrial).</li>
+              <li><strong>Technical Specs Table:</strong> Standardized airflow, energy efficiency ratings, and dimension specs into easily comparable rows.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="vrv-ui-heading">
+      <div class="cs-section-header">
+        <div class="cs-section-num">05</div>
+        <h2 class="cs-section-title" id="vrv-ui-heading">Final UI &amp; Responsive Design</h2>
+      </div>
+      <div class="cs-section-body">
+        <p class="cs-paragraph">
+          The high-fidelity UI uses a clean, professional palette suited to a B2B
+          industrial brand: navy blue as the primary brand colour, white as the
+          dominant background, and light blue-grey for secondary surfaces. The
+          typography system uses strong weight contrast to guide users through
+          content hierarchy.
+        </p>
+        <p class="cs-paragraph">
+          Responsive guidelines were produced alongside the desktop UI, covering
+          the key layout changes at tablet and mobile breakpoints &mdash; particularly
+          how the product navigation adapts from a horizontal filter bar (desktop)
+          to a collapsible side panel or dropdown (mobile).
+        </p>
+
+        <div class="cs-image-block" style="margin-top:20px;">
+          <img src="../assets/vrv-aircon.jpeg" alt="VRV Aircon B2B HVAC High Fidelity Redesigned Interface Showcase" class="cs-real-image" />
+        </div>
+
+        <div class="cs-two-col" style="margin-top:20px;">
+          <div class="cs-card">
+            <h3 class="cs-card-title">Desktop Experience</h3>
+            <ul class="cs-list">
+              <li>Multi-tier navigation bar with instant Quote action</li>
+              <li>Filterable product grid with inline specifications</li>
+              <li>High-contrast lead capture form on all service pages</li>
+            </ul>
+          </div>
+          <div class="cs-card">
+            <h3 class="cs-card-title">Mobile Adaptation</h3>
+            <ul class="cs-list">
+              <li>Collapsible category filter drawer</li>
+              <li>Single-column scannable specs sheet</li>
+              <li>Persistent tap-to-call &amp; quote bar at bottom</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="vrv-handoff-heading">
+      <div class="cs-section-header">
+        <div class="cs-section-num">06</div>
+        <h2 class="cs-section-title" id="vrv-handoff-heading">Design Handoff Specifications</h2>
+      </div>
+      <div class="cs-section-body">
+        <p class="cs-paragraph">
+          Handoff documentation was prepared for the development team, covering:
+        </p>
+        <ul class="cs-list">
+          <li><strong>Colour tokens:</strong> Primary Navy (#174A7E), Accent Blue (#4A90E2), Light Surface (#F5FAFF) with strict accessibility contrast ratios.</li>
+          <li><strong>Typography scale:</strong> Montserrat size, weight, and line-height scale mapped to H1-H4 and Body tokens.</li>
+          <li><strong>Spacing &amp; Grid:</strong> 12-column desktop grid (24px gutter) collapsing to 4-column mobile grid (16px margin).</li>
+          <li><strong>Interactive states:</strong> Hover, active, focus, and error states defined for form inputs and primary buttons.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cs-section cs-section--last" aria-labelledby="vrv-reflection-heading">
+      <div class="cs-section-header">
+        <div class="cs-section-num">07</div>
+        <h2 class="cs-section-title" id="vrv-reflection-heading">Reflection &amp; Takeaways</h2>
+      </div>
+      <div class="cs-section-body">
+        <div class="cs-takeaways-block">
+          <p class="cs-paragraph">
+            The audit phase was the most valuable part of this project. Having a
+            structured method for evaluating an existing website &mdash; rather than
+            just having an instinctive reaction to it &mdash; produced much clearer
+            design decisions downstream. When every design change can be traced back
+            to a specific audit finding, the reasoning is much easier to communicate
+            and defend.
+          </p>
+          <ul class="cs-list">
+            <li><strong>Clarity Over Emotion:</strong> In B2B HVAC design, buyers prioritize specs, system reliability, and quick quotation over decorative visual fluff.</li>
+            <li><strong>Friction Elimination:</strong> Surfacing the "Get a Quote" action prominently on every page reduced the user path to inquiry by 2 steps.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Navigation -->
+    <div class="cs-nav-footer">
+      <a href="campusconnect.html" class="btn btn-outline">&#8592; Previous: CampusConnect</a>
+      <a href="smart-bankers.html" class="btn btn-primary">Next Project: Smart Bankers &#8594;</a>
+    </div>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-name">Chandru Duraikannan</span>
+        <span class="footer-role">UI/UX Designer</span>
+      </div>
+      <div class="footer-right">
+        <span class="footer-note">Based in Salem, India</span>
+        <span class="footer-copy">&copy; 2024</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

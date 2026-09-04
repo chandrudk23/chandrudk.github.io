@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusConnect — College Admin App | Chandru Duraikannan</title>
+  <meta name="description"
+    content="CampusConnect college administration mobile app UI/UX case study — multi-role design for students, faculty, and administrators by Chandru Duraikannan." />
+  <meta name="author" content="Chandru Duraikannan" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+
+<body>
+
+  <header class="site-header" id="site-header" role="banner">
+    <div class="header-inner">
+      <a href="../index.html" class="header-logo" aria-label="Chandru Duraikannan — Home">
+        Chandru<span class="logo-dot">.</span>
+      </a>
+      <nav class="header-nav" role="navigation" aria-label="Main navigation">
+        <a href="../index.html#uiux-design" class="nav-link">Work</a>
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+        <a href="../assets/Chandru Duraikannan Resume.pdf" class="nav-link nav-resume" target="_blank"
+          rel="noopener noreferrer">Resume ↗</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&#10005;</button>
+    <nav>
+      <a href="../index.html#uiux-design" class="mobile-nav-link">Work</a>
+      <a href="../index.html#about" class="mobile-nav-link">About</a>
+      <a href="../index.html#contact" class="mobile-nav-link">Contact</a>
+      <a href="../assets/Chandru Duraikannan Resume.pdf" class="mobile-nav-link" target="_blank"
+        rel="noopener noreferrer">Resume ↗</a>
+    </nav>
+  </div>
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+
+  <main class="cs-main">
+
+    <!-- Project Intro -->
+    <section class="cs-intro" aria-label="Project overview">
+      <div class="container">
+        <a href="../index.html#uiux-design" class="cs-back-link">&#8592; Back to Work</a>
+
+        <div class="cs-intro-inner">
+          <div class="cs-intro-text">
+            <div class="section-label">UI/UX Design &middot; 02</div>
+            <h1 class="cs-project-title">CampusConnect</h1>
+            <p class="cs-project-subtitle">College Administration Platform</p>
+            <p class="cs-project-summary">
+              A college administration mobile app that centralises academic communication
+              for students, faculty, and administrators. The challenge was simplifying
+              complex, multi-role workflows into a single interface that each user type
+              could navigate without friction.
+            </p>
+          </div>
+
+          <div class="cs-meta-grid">
+            <div class="cs-meta-item">
+              <div class="cs-meta-label">Role</div>
+              <div class="cs-meta-value">UI/UX Designer</div>
+            </div>
+            <div class="cs-meta-item">
+              <div class="cs-meta-label">Type</div>
+              <div class="cs-meta-value">Mobile App Design</div>
+            </div>
+            <div class="cs-meta-item">
+              <div class="cs-meta-label">Tools</div>
+              <div class="cs-meta-value">Figma</div>
+            </div>
+            <div class="cs-meta-item">
+              <div class="cs-meta-label">Figma File</div>
+              <div class="cs-meta-value"><a
+                  href="https://www.figma.com/design/hrtps4LSEG7fv3DvvjKUAP/College-project?node-id=327-6&amp;t=lMq633YI3UaJtViF-1"
+                  target="_blank" rel="noopener noreferrer" class="inline-link">View Prototype ↗</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Visual: Dashboard mockup -->
+    <div class="cs-hero-visual" aria-label="CampusConnect Mobile App Interface Showcase">
+      <div class="container">
+        <div class="cs-real-hero-container">
+          <img src="../assets/campusconnect_behance_top.png"
+            alt="CampusConnect College Administration Mobile App Interface Screens" class="cs-real-image" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container cs-content-container">
+
+      <!-- 01 Overview -->
+      <section class="cs-section" aria-labelledby="cc-overview-heading">
+        <div class="cs-section-header">
+          <div class="cs-section-num">01</div>
+          <h2 class="cs-section-title" id="cc-overview-heading">Overview</h2>
+        </div>
+        <div class="cs-section-body">
+          <p class="cs-paragraph">
+            CampusConnect is a college administration mobile app that brings together
+            the key workflows of a campus &mdash; attendance management, academic tasks,
+            announcements, and scheduling &mdash; into a single platform accessible
+            by students, faculty, and administrators through role-specific interfaces.
+          </p>
+          <p class="cs-paragraph">
+            The project required careful thinking about information architecture and
+            permission-based UI: each user type should see only what's relevant to
+            them, without a cluttered interface that tries to serve everyone at once.
+          </p>
+        </div>
+      </section>
+
+      <!-- 02 Context / Problem -->
+      <section class="cs-section" aria-labelledby="cc-problem-heading">
+        <div class="cs-section-header">
+          <div class="cs-section-num">02</div>
+          <h2 class="cs-section-title" id="cc-problem-heading">Context &amp; Problem</h2>
+        </div>
+        <div class="cs-section-body">
+          <p class="cs-paragraph">
+            College campuses typically manage academic communication through disconnected
+            channels &mdash; notice boards, WhatsApp groups, email, and separate systems
+            for attendance and scheduling. This fragmentation creates friction for
+            every user type:
+          </p>
+          <ul class="cs-insight-list">
+            <li>
+              <strong>Students</strong> struggle to keep track of attendance, upcoming
+              tasks, and announcements from multiple sources.
+            </li>
+            <li>
+              <strong>Faculty</strong> need a simple way to record attendance, post
+              updates, and manage academic timelines without switching between tools.
+            </li>
+            <li>
+              <strong>Administrators</strong> require an overview of campus-wide data &mdash;
+              attendance rates, class schedules, staff &mdash; accessible at a glance.
+            </li>
+          </ul>
+          <p class="cs-paragraph">
+            The goal was to design a single app that addresses all three needs
+            without creating a complex, confusing interface that tries to be
+            everything to everyone simultaneously.
+          </p>
+        </div>
+      </section>
+
+      <!-- 03 Understanding the Experience -->
+      <section class="cs-section" aria-labelledby="cc-research-heading">
+        <div class="cs-section-header">
+          <div class="cs-section-num">03</div>
+          <h2 class="cs-section-title" id="cc-research-heading">Understanding the Experience</h2>
+        </div>
+        <div class="cs-section-body">
+          <p class="cs-paragraph">
+            The design process began with defining the distinct mental models of each
+            user type &mdash; what they care about, what tasks they perform most
+            frequently, and what information needs to be immediately accessible.
+          </p>
+          <div class="cc-role-cards">
+            <div class="cc-role-card">
+              <div class="cc-role-label">Student</div>
+              <ul>
+                <li>Attendance percentage and subject-wise breakdown</li>
+                <li>Upcoming assignments and submission deadlines</li>
+                <li>Class timetable and changes</li>
+                <li>Announcements from faculty</li>
+              </ul>
+            </div>
+            <div class="cc-role-card">
+              <div class="cc-role-label">Faculty</div>
+              <ul>
+                <li>Quick attendance marking for today's classes</li>
+                <li>Posting announcements and task deadlines</li>
+                <li>Viewing class lists and student records</li>
+                <li>Scheduling and timetable management</li>
+              </ul>
+            </div>
+            <div class="cc-role-card">
+              <div class="cc-role-label">Administrator</div>
+              <ul>
+                <li>Campus-wide attendance overview</li>
+                <li>Staff and class management</li>
+                <li>Announcements to all users</li>
+                <li>Reporting and summary views</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 Information Architecture -->
+      <section class="cs-section" aria-labelledby="cc-ia-heading">
+        <div class="cs-section-header">
+          <div class="cs-section-num">04</div>
+          <h2 class="cs-section-title" id="cc-ia-heading">Information Architecture</h2>
+        </div>
+        <div class="cs-section-body">
+          <p class="cs-paragraph">
+            The IA is structured around a shared navigation shell with role-based
+            content. After login, the app identifies the user's role and populates
+            the navigation and dashboard with role-appropriate content. The core
+            sections remain consistent:
+          </p>
+          <div class="cs-ia-diagram cc-ia">
+            <div class="cs-ia-node cs-ia-node--root">CampusConnect</div>
+            <div class="cs-ia-branches">
+              <div class="cs-ia-branch">
+                <div class="cs-ia-node">Dashboard</div>
+                <div class="cs-ia-sub-nodes">
+                  <div class="cs-ia-sub">Overview Stats</div>
+                  <div class="cs-ia-sub">Quick Actions</div>
+                  <div class="cs-ia-sub">Recent Activity</div>
+                </div>
+              </div>
+              <div class="cs-ia-branch">
+                <div class="cs-ia-node">Attendance</div>
+                <div class="cs-ia-sub-nodes">
+                  <div class="cs-ia-sub">Mark / View</div>
+                  <div class="cs-ia-sub">Reports</div>
+                </div>
+              </div>
+              <div class="cs-ia-branch">
+                <div class="cs-ia-node">Tasks</div>
+                <div class="cs-ia-sub-nodes">
+                  <div class="cs-ia-sub">My Tasks</div>
+                  <div class="cs-ia-sub">Assign Task</div>
+                </div>
+              </div>
+              <div class="cs-ia-branch">
+                <div class="cs-ia-node">Notices</div>
+                <div class="cs-ia-sub-nodes">
+                  <div class="cs-ia-sub">Announcements</div>
+                  <div class="cs-ia-sub">Post (Faculty+)</div>
+                </div>
+              </div>
+              <div class="cs-ia-branch">
+                <div class="cs-ia-node">Profile</div>
+                <div class="cs-ia-sub-nodes">
+                  <div class="cs-ia-sub">Account</div>
+                  <div class="cs-ia-sub">Settings</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="cs-paragraph">
+            The key architectural decision was making the navigation identical for
+            all roles, but changing the content and permissions per section. This
+            avoids separate apps while keeping the interface coherent for each
+            user type.
+          </p>
+        </div>
+      </section>
+
+      <!-- 05 User Flow -->
+      <section class="cs-section" aria-labelledby="cc-flow-heading">
+        <div class="cs-section-header">
+          <div class="cs-section-num">05</div>
+          <h2 class="cs-section-title" id="cc-flow-heading">Key User Flows</h2>
+        </div>
+        <div class="cs-section-body">
+          <p class="cs-paragraph">Two primary flows were defined and designed in detail:</p>
+
+          <div class="cc-flow-group">
+            <div class="cc-flow-label">Faculty: Mark Attendance</div>
+            <div class="cs-flow" style="padding:20px;">
+              <div class="cs-flow-step">
+                <div class="cs-flow-step-num">1</div>
+                <div class="cs-flow-step-label">Dashboard<br><span>Select today's class</span></div>
+              </div>
+              <div class="cs-flow-arrow">&#8594;</div>
+              <div class="cs-flow-step">
+                <div class="cs-flow-step-num">2</div>
+                <div class="cs-flow-step-label">Student List<br><span>View class roster</span></div>
+              </div>
+              <div class="cs-flow-arrow">&#8594;</div>
+              <div class="cs-flow-step">
+                <div class="cs-flow-step-num">3</div>
+                <div class="cs-flow-step-label">Mark Status<br><span>Present / Absent</span></div>
+              </div>
+              <div class="cs-flow-arrow">&#8594;</div>
+              <div class="cs-flow-step cs-flow-step--end">
+                <div class="cs-flow-step-num">4</div>
+                <div class="cs-flow-step-label">Confirm<br><span>Submit &amp; save</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cc-flow-group" style="margin-top:24px;">
+            <div class="cc-flow-label">Student: Check Attendance</div>
+            <div class="cs-flow" style="padding:20px;">
+              <div class="cs-flow-step">
+                <div class="cs-flow-step-num">1</div>
+                <div class="cs-flow-step-label">Dashboard<br><span>Attendance widget</span></div>
+              </div>
+              <div class="cs-flow-arrow">&#8594;</div>
+              <div class="cs-flow-step">
+                <div class="cs-flow-step-num">2</div>
+                <div class="cs-flow-step-label">Attendance<br><span>Subject overview</span></div>
+              </div>
+              <div class="cs-flow-arrow">&#8594;</div>
+              <div class="cs-flow-step cs-flow-step--end">
+                <div class="cs-flow-step-num">3</div>
+                <div class="cs-flow-step-label">Subject Detail<br><span>Session-level log</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 Wireframes -->
+      <section class="cs-section" aria-labelledby="cc-wireframes-heading">
+        <div class="cs-section-header">
+          <div class="cs-section-num">06</div>
+          <h2 class="cs-section-title" id="cc-wireframes-heading">Wireframes</h2>
+        </div>
+        <div class="cs-section-body">
+          <p class="cs-paragraph">
+            Wireframes were produced in Figma for the key screens across all three
+            user roles. The priority was validating the layout logic before committing
+            to visual styling &mdash; particularly for the dashboard and attendance
+            screens, which carry the most information density.
+          </p>
+
+          <div class="cs-two-col" style="margin-top:16px;">
+            <div class="cs-card">
+              <h3 class="cs-card-title">Role-Based Dashboard Wireframing</h3>
+              <ul class="cs-list">
+                <li><strong>Information Priority:</strong> Tested layout hierarchies to place high-frequency widgets
+                  (Attendance % for students, Mark Attendance for faculty) above secondary announcements.</li>
+                <li><strong>Modular Grid:</strong> Designed scalable card modules that adapt when switching between
+                  Student, Faculty, and Admin permission tiers.</li>
+              </ul>
+            </div>
+            <div class="cs-card">
+              <h3 class="cs-card-title">Attendance &amp; Task Workflows</h3>
+              <ul class="cs-list">
+                <li><strong>Tap-Count Reduction:</strong> Wireframed an attendance roster interface allowing faculty to
+                  record full class statuses within 3 quick taps.</li>
+                <li><strong>Figma Interactive Prototypes:</strong> Validated navigation flows in interactive Figma
+                  wireframe prototypes before establishing visual tokens.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="margin-top:20px;">
+            <a href="https://www.figma.com/design/hrtps4LSEG7fv3DvvjKUAP/College-project?node-id=327-6&amp;t=lMq633YI3UaJtViF-1"
+              target="_blank" rel="noopener noreferrer" class="btn btn-outline"
+              style="display:inline-flex; align-items:center; gap:6px;">Explore Figma Design File ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 Final UI -->
+      <section class="cs-section" aria-labelledby="cc-ui-heading">
+        <div class="cs-section-header">
+          <div class="cs-section-num">07</div>
+          <h2 class="cs-section-title" id="cc-ui-heading">Final UI &amp; Interface Design</h2>
+        </div>
+        <div class="cs-section-body">
+          <p class="cs-paragraph">
+            The high-fidelity screens were designed with a clean blue and white palette
+            that communicates trust and structure &mdash; appropriate for an academic
+            administration tool. The colour accent (blue) is used functionally for
+            interactive elements, active states, and status indicators rather than
+            for decoration.
+          </p>
+          <p class="cs-paragraph">
+            Typography uses a tight hierarchy: section headings at 18px Semibold,
+            data values at 14px Regular with generous line height, and status
+            labels as small uppercase caps &mdash; keeping information readable
+            even in data-dense views.
+          </p>
+          <div class="cs-image-block" style="margin-top:20px;">
+            <img src="../assets/campusconnect_behance_bottom.png"
+              alt="CampusConnect High Fidelity Mobile Interface Showcase and Workflow Screens" class="cs-real-image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 Design System -->
+      <section class="cs-section" aria-labelledby="cc-ds-heading">
+        <div class="cs-section-header">
+          <div class="cs-section-num">08</div>
+          <h2 class="cs-section-title" id="cc-ds-heading">Design System &amp; Components</h2>
+        </div>
+        <div class="cs-section-body">
+          <p class="cs-paragraph">
+            A component library was built to ensure consistency across the three
+            role-based interfaces. Shared components reduce duplication and make
+            it easier to apply role-specific content without redesigning layouts.
+          </p>
+          <div class="cs-two-col" style="margin-top:16px;">
+            <div class="cs-card">
+              <h3 class="cs-card-title">Shared Navigation &amp; Shell</h3>
+              <ul class="cs-list">
+                <li>Role-based header with active status indicator</li>
+                <li>Unified bottom navigation bar across all roles</li>
+                <li>Quick action drawer for high-frequency tasks</li>
+              </ul>
+            </div>
+            <div class="cs-card">
+              <h3 class="cs-card-title">Data &amp; Form Components</h3>
+              <ul class="cs-list">
+                <li>Attendance roster cards with tap-to-toggle status</li>
+                <li>Task deadline cards with priority tags</li>
+                <li>Notice banner with high-contrast alert states</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 09 Reflection -->
+      <section class="cs-section cs-section--last" aria-labelledby="cc-reflection-heading">
+        <div class="cs-section-header">
+          <div class="cs-section-num">09</div>
+          <h2 class="cs-section-title" id="cc-reflection-heading">Reflection &amp; Takeaways</h2>
+        </div>
+        <div class="cs-section-body">
+          <div class="cs-takeaways-block">
+            <p class="cs-paragraph">
+              CampusConnect was the most complex project I've worked on from an
+              information architecture perspective. The biggest challenge was
+              avoiding the trap of designing the administrator experience first
+              and then trying to simplify it for students. The better approach was to
+              design each role's experience independently, then find the shared structural components.
+            </p>
+            <ul class="cs-list">
+              <li><strong>Task Efficiency:</strong> The attendance marking flow for faculty taught me how much small
+                interaction decisions matter in task-heavy contexts. Reducing taps and adding instant status feedback
+                significantly improved usability.</li>
+              <li><strong>Systemic Flexibility:</strong> Structuring permissions at the component level made it seamless
+                to maintain a single application code and design footprint across 3 distinct user roles.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Navigation -->
+      <div class="cs-nav-footer">
+        <a href="rentify.html" class="btn btn-outline">&#8592; Previous: Rentify</a>
+        <a href="vrv-aircon.html" class="btn btn-primary">Next Project: VRV Aircon &#8594;</a>
+      </div>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <span class="footer-name">Chandru Duraikannan</span>
+          <span class="footer-role">UI/UX Designer</span>
+        </div>
+        <div class="footer-right">
+          <span class="footer-note">Based in Salem, India</span>
+          <span class="footer-copy">&copy; 2024</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <style>
+    /* Page-specific styles for role cards and flow groups */
+    .cc-role-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    .cc-role-card {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+    }
+
+    .cc-role-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-dark);
+      margin-bottom: 12px;
+    }
+
+    .cc-role-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .cc-role-card li {
+      font-size: 13px;
+      color: var(--text-mid);
+      padding-left: 12px;
+      position: relative;
+      line-height: 1.4;
+    }
+
+    .cc-role-card li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 5px;
+      height: 1.5px;
+      background: var(--accent);
+    }
+
+    .cc-flow-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .cs-campus-full-mock {
+      width: 100%;
+    }
+
+    .cc-ia .cs-ia-branches {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+      .cc-role-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</body>
+
+</html>

@@ -1,0 +1,570 @@
+/* ═══════════════════════════════════════════════════════════════════
+   CASE STUDY PAGES — shared stylesheet
+   Extends style.css (loaded first via <link rel="stylesheet" href="../style.css" />)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ─── CASE STUDY MAIN ────────────────────────────────────────────── */
+.cs-main {
+  padding-bottom: 0;
+}
+
+/* ─── INTRO SECTION ─────────────────────────────────────────────── */
+.cs-intro {
+  padding: 56px 0 40px;
+  background: var(--white);
+}
+
+.cs-back-link {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.cs-back-link:hover { color: var(--accent-dark); }
+
+.cs-intro-inner {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 56px;
+  align-items: start;
+}
+
+.cs-project-title {
+  font-size: 44px;
+  font-weight: 800;
+  color: var(--text-dark);
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.cs-project-subtitle {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.cs-project-summary {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-mid);
+  line-height: 1.7;
+}
+
+.cs-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-self: start;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+}
+
+.cs-meta-item {}
+.cs-meta-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.cs-meta-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* ─── HERO VISUAL BAND ──────────────────────────────────────────── */
+.cs-hero-visual {
+  width: 100%;
+  padding: 8px 0 24px;
+}
+
+.cs-real-hero-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 20px rgba(23, 74, 126, 0.06);
+}
+
+.cs-real-image {
+  width: 100%;
+  height: auto;
+  max-height: 580px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+/* ─── CONTENT CONTAINER ─────────────────────────────────────────── */
+.cs-content-container {
+  padding-top: 48px;
+  padding-bottom: 72px;
+}
+
+/* ─── CASE STUDY SECTION GRID ───────────────────────────────────── */
+.cs-section {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.28fr) minmax(0, 0.72fr);
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.cs-section--last {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Left Column (Header / Title / Number) */
+.cs-section-header {
+  grid-column: 1;
+  width: 100%;
+}
+
+.cs-section-num {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent-dark);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.cs-section-title,
+.cs-section-heading {
+  grid-column: 1;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.cs-section-subdesc {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+/* Right Column (Body / Content) */
+.cs-section-body,
+.cs-section-content {
+  grid-column: 2;
+  width: 100%;
+}
+
+.cs-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-mid);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+.cs-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* Lists */
+.cs-list {
+  margin: 12px 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cs-list li {
+  font-size: 15px;
+  color: var(--text-mid);
+  line-height: 1.65;
+  padding-left: 16px;
+  position: relative;
+}
+.cs-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 1.5px;
+  background: var(--accent);
+}
+.cs-list strong {
+  color: var(--text-dark);
+}
+
+/* Two-column card grid (Core Features) */
+.cs-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 4px;
+}
+
+.cs-card {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
+
+.cs-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+/* Image blocks (Large UI Visuals) */
+.cs-image-block {
+  width: 100%;
+  margin-top: 4px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.cs-image-block img.cs-real-image {
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  object-fit: contain;
+  object-position: top center;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 20px rgba(23, 74, 126, 0.06);
+}
+
+/* Takeaways block */
+.cs-takeaways-block {
+  background: var(--bg-soft);
+  border-left: 3px solid var(--accent-dark);
+  padding: 24px 28px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Navigation footer */
+.cs-nav-footer,
+.cs-project-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+.cs-nav-prev,
+.cs-nav-next {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-mid);
+  transition: color var(--transition);
+}
+}
+.cs-nav-prev:hover,
+.cs-nav-next:hover {
+  color: var(--accent-dark);
+}
+
+/* ─── INFORMATION ARCHITECTURE DIAGRAMS ────────────────────────── */
+.cs-ia-diagram {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.cs-ia-node {
+  display: inline-block;
+  padding: 8px 18px;
+  background: var(--white);
+  border: 1.5px solid var(--accent);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-dark);
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(23, 74, 126, 0.06);
+}
+.cs-ia-node--root {
+  background: var(--accent-dark);
+  color: var(--white);
+  border-color: var(--accent-dark);
+  font-size: 14px;
+  padding: 10px 22px;
+}
+.cs-ia-branches {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 16px;
+  width: 100%;
+}
+.cs-ia-branch {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.cs-ia-branch .cs-ia-node {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+.cs-ia-sub-nodes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.cs-ia-sub {
+  font-size: 12px;
+  color: var(--text-mid);
+  background: var(--bg-blue-tint);
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* ─── USER FLOW CHAINS ─────────────────────────────────────────── */
+.cs-flow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin: 14px 0 24px;
+  flex-wrap: wrap;
+}
+.cs-flow-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  flex: 1;
+  min-width: 140px;
+}
+.cs-flow-step-num {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--accent-dark);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cs-flow-step-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.3;
+}
+.cs-flow-step-label span {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+.cs-flow-arrow {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* ─── WIREFRAME GRID & MOCK CARDS ──────────────────────────────── */
+.cs-wireframe-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+  width: 100%;
+}
+.cs-wf-screen {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cs-wf-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.cs-wf-phone {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cs-wf-status-bar {
+  height: 4px;
+  width: 40px;
+  background: var(--border);
+  border-radius: 2px;
+  align-self: center;
+}
+.cs-wf-block {
+  background: var(--bg-blue-tint);
+  border-radius: 4px;
+  height: 14px;
+}
+.cs-wf-block--sm { height: 10px; width: 60%; }
+.cs-wf-block--md { height: 14px; width: 80%; }
+.cs-wf-block--search { height: 24px; background: var(--bg-soft); border: 1px solid var(--border-light); }
+.cs-wf-block--banner { height: 48px; background: #C5DFF5; }
+.cs-wf-row { display: flex; gap: 8px; }
+.cs-wf-card-sm { flex: 1; background: var(--bg-soft); border-radius: 4px; height: 40px; border: 1px solid var(--border-light); }
+.cs-wf-menu-item { height: 20px; background: var(--bg-soft); border-radius: 4px; }
+.cs-wf-section-card { height: 36px; background: var(--bg-blue-tint); border-radius: 4px; }
+.cs-wf-nav-bar { margin-top: auto; display: flex; justify-content: space-around; padding-top: 8px; border-top: 1px solid var(--border-light); }
+.cs-wf-nav-item { width: 12px; height: 12px; border-radius: 50%; background: var(--border); }
+.cs-wf-nav-item--active { background: var(--accent-dark); }
+.cs-wf-cta-btn { background: var(--accent-dark); height: 28px; border-radius: 4px; }
+.cs-wf-chip { height: 16px; width: 40px; background: var(--border); border-radius: 8px; }
+.cs-wf-chip--active { background: var(--accent-dark); }
+
+/* Role cards (CampusConnect specific) */
+.cc-role-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 16px 0;
+}
+.cc-role-card {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+}
+.cc-role-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin-bottom: 10px;
+}
+
+/* ─── RESPONSIVE ────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .cs-intro-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .cs-section {
+    grid-template-columns: 240px 1fr;
+    gap: 32px;
+  }
+  .cs-section-header,
+  .cs-section-title,
+  .cs-section-heading {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cs-intro { padding: 40px 0 32px; }
+  .cs-project-title { font-size: 32px; }
+
+  .cs-real-image {
+    max-height: none;
+    object-fit: contain;
+  }
+
+  .cs-section {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+  .cs-section-header,
+  .cs-section-title,
+  .cs-section-heading {
+    grid-column: 1;
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  .cs-section-body,
+  .cs-section-content {
+    grid-column: 1;
+  }
+
+  .cs-two-col {
+    grid-template-columns: 1fr;
+  }
+  .cc-role-cards {
+    grid-template-columns: 1fr;
+  }
+  .cs-wireframe-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cs-flow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cs-flow-arrow {
+    transform: rotate(90deg);
+    align-self: center;
+  }
+
+  .cs-nav-footer,
+  .cs-project-nav {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .cs-nav-footer .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .cs-meta-grid { grid-template-columns: 1fr; }
+  .cs-wireframe-grid { grid-template-columns: 1fr; }
+}
+

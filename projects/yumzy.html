@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yumzy — Food Delivery App | Chandru Duraikannan</title>
+  <meta name="description" content="Yumzy food delivery mobile app UI/UX case study by Chandru Duraikannan — user research, wireframes, and high-fidelity Figma design." />
+  <meta name="author" content="Chandru Duraikannan" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header" id="site-header" role="banner">
+  <div class="header-inner">
+    <a href="../index.html" class="header-logo" aria-label="Chandru Duraikannan — Home">
+      Chandru<span class="logo-dot">.</span>
+    </a>
+    <nav class="header-nav" role="navigation" aria-label="Main navigation">
+      <a href="../index.html#uiux-design" class="nav-link">Work</a>
+      <a href="../index.html#about" class="nav-link">About</a>
+      <a href="../index.html#contact" class="nav-link">Contact</a>
+      <a href="../assets/Chandru Duraikannan Resume.pdf" class="nav-link nav-resume" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&#10005;</button>
+  <nav>
+    <a href="../index.html#uiux-design" class="mobile-nav-link">Work</a>
+    <a href="../index.html#about" class="mobile-nav-link">About</a>
+    <a href="../index.html#contact" class="mobile-nav-link">Contact</a>
+    <a href="../assets/Chandru Duraikannan Resume.pdf" class="mobile-nav-link" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+  </nav>
+</div>
+<div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+
+<!-- Case Study Body -->
+<main class="cs-main">
+
+  <!-- Project Intro -->
+  <section class="cs-intro" aria-label="Project overview">
+    <div class="container">
+      <a href="../index.html#uiux-design" class="cs-back-link">&#8592; Back to Work</a>
+
+      <div class="cs-intro-inner">
+        <div class="cs-intro-text">
+          <div class="section-label">UI/UX Design &middot; 01</div>
+          <h1 class="cs-project-title">Yumzy</h1>
+          <p class="cs-project-subtitle">Food Delivery Mobile Application</p>
+          <p class="cs-project-summary">
+            A food delivery app designed to make ordering fast, simple, and enjoyable.
+            The focus was on a clear user flow &mdash; from restaurant discovery
+            through to order confirmation &mdash; with an interface that stays
+            easy to navigate at every step.
+          </p>
+        </div>
+
+        <div class="cs-meta-grid">
+          <div class="cs-meta-item">
+            <div class="cs-meta-label">Role</div>
+            <div class="cs-meta-value">UI/UX Designer</div>
+          </div>
+          <div class="cs-meta-item">
+            <div class="cs-meta-label">Type</div>
+            <div class="cs-meta-value">Mobile App Design</div>
+          </div>
+          <div class="cs-meta-item">
+            <div class="cs-meta-label">Tools</div>
+            <div class="cs-meta-value">Figma</div>
+          </div>
+          <div class="cs-meta-item">
+            <div class="cs-meta-label">Category</div>
+            <div class="cs-meta-value">Food &amp; Delivery</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Visual -->
+  <div class="cs-hero-visual" aria-hidden="true">
+    <div class="cs-hero-placeholder cs-hero-placeholder--yumzy">
+      <div class="cs-hero-phones">
+        <div class="cs-phone cs-phone--l">
+          <div class="cs-phone-screen">
+            <div class="cs-phone-header">
+              <div class="cs-ph-avatar"></div>
+              <div class="cs-ph-lines">
+                <div class="cs-ph-line cs-ph-line--sm"></div>
+                <div class="cs-ph-line cs-ph-line--xs"></div>
+              </div>
+            </div>
+            <div class="cs-ph-search"></div>
+            <div class="cs-ph-chips">
+              <div class="cs-ph-chip cs-ph-chip--active"></div>
+              <div class="cs-ph-chip"></div>
+              <div class="cs-ph-chip"></div>
+            </div>
+            <div class="cs-ph-card-list">
+              <div class="cs-ph-card-item"></div>
+              <div class="cs-ph-card-item"></div>
+              <div class="cs-ph-card-item"></div>
+            </div>
+          </div>
+        </div>
+        <div class="cs-phone cs-phone--c">
+          <div class="cs-phone-screen cs-phone-screen--detail">
+            <div class="cs-ph-detail-hero"></div>
+            <div class="cs-ph-detail-body">
+              <div class="cs-ph-line cs-ph-line--lg"></div>
+              <div class="cs-ph-line cs-ph-line--md"></div>
+              <div class="cs-ph-stars"></div>
+              <div class="cs-ph-line cs-ph-line--sm"></div>
+              <div class="cs-ph-line cs-ph-line--sm" style="width:75%;"></div>
+              <div class="cs-ph-btn-row">
+                <div class="cs-ph-btn cs-ph-btn--primary"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cs-phone cs-phone--r">
+          <div class="cs-phone-screen cs-phone-screen--cart">
+            <div class="cs-ph-cart-header">
+              <div class="cs-ph-line cs-ph-line--md"></div>
+            </div>
+            <div class="cs-ph-cart-items">
+              <div class="cs-ph-cart-item"></div>
+              <div class="cs-ph-cart-item"></div>
+              <div class="cs-ph-cart-item"></div>
+            </div>
+            <div class="cs-ph-total-bar">
+              <div class="cs-ph-line cs-ph-line--sm"></div>
+              <div class="cs-ph-line cs-ph-line--lg"></div>
+              <div class="cs-ph-btn cs-ph-btn--primary" style="margin-top:10px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container cs-content-container">
+
+    <!-- 01 Overview -->
+    <section class="cs-section" aria-labelledby="cs-overview-heading">
+      <div class="cs-section-num" aria-hidden="true">01</div>
+      <h2 class="cs-section-title" id="cs-overview-heading">Overview</h2>
+      <div class="cs-section-body">
+        <p>
+          Yumzy is a food delivery mobile app project. The goal was to design a
+          complete end-to-end ordering experience &mdash; from discovering restaurants
+          to tracking a completed order &mdash; with a clean, accessible interface
+          that doesn't overload the user at any stage.
+        </p>
+        <p>
+          This was a self-initiated project focused on practising user research,
+          user flow definition, wireframing, and high-fidelity UI production in Figma.
+        </p>
+      </div>
+    </section>
+
+    <!-- 02 Context / Problem -->
+    <section class="cs-section" aria-labelledby="cs-problem-heading">
+      <div class="cs-section-num" aria-hidden="true">02</div>
+      <h2 class="cs-section-title" id="cs-problem-heading">Context &amp; Problem</h2>
+      <div class="cs-section-body">
+        <p>
+          Food delivery apps often fail users in predictable ways: too many steps to
+          reach a food item, cluttered home screens with excessive promotions, unclear
+          restaurant filtering, and checkout flows that feel slow or uncertain.
+        </p>
+        <p>
+          The challenge for Yumzy was to create an ordering experience that felt
+          genuinely quick &mdash; not just visually fast, but structurally simple &mdash;
+          so users could find what they want, confirm an order, and feel confident
+          about it with minimal effort.
+        </p>
+      </div>
+    </section>
+
+    <!-- 03 Understanding the Experience -->
+    <section class="cs-section" aria-labelledby="cs-research-heading">
+      <div class="cs-section-num" aria-hidden="true">03</div>
+      <h2 class="cs-section-title" id="cs-research-heading">Understanding the Experience</h2>
+      <div class="cs-section-body">
+        <p>
+          Before wireframing, I reviewed existing food delivery apps to understand
+          common friction points. The key patterns I identified:
+        </p>
+        <ul class="cs-insight-list">
+          <li>
+            <strong>Overloaded home screens</strong> &mdash; too many promotional banners
+            competing for attention, pushing actual restaurant listings below the fold.
+          </li>
+          <li>
+            <strong>Unclear filtering</strong> &mdash; category and cuisine filters are
+            often buried or require multiple taps to apply.
+          </li>
+          <li>
+            <strong>Checkout drop-off</strong> &mdash; multi-step checkouts with unclear
+            progress, particularly around delivery address confirmation and payment.
+          </li>
+          <li>
+            <strong>Order status ambiguity</strong> &mdash; post-order screens frequently
+            lack clear, reassuring feedback about order acceptance.
+          </li>
+        </ul>
+        <p>
+          These observations shaped the structural priorities for Yumzy: a focused
+          home screen, prominent filtering, and a checkout flow with clear progress.
+        </p>
+      </div>
+    </section>
+
+    <!-- 04 Information Architecture -->
+    <section class="cs-section" aria-labelledby="cs-ia-heading">
+      <div class="cs-section-num" aria-hidden="true">04</div>
+      <h2 class="cs-section-title" id="cs-ia-heading">Information Architecture</h2>
+      <div class="cs-section-body">
+        <p>
+          The app is structured around four primary destinations accessible from
+          a bottom navigation bar: Home, Search, Orders, and Profile. This keeps
+          the navigation predictable and avoids deep nesting.
+        </p>
+        <div class="cs-ia-diagram">
+          <div class="cs-ia-node cs-ia-node--root">Yumzy</div>
+          <div class="cs-ia-branches">
+            <div class="cs-ia-branch">
+              <div class="cs-ia-node">Home</div>
+              <div class="cs-ia-sub-nodes">
+                <div class="cs-ia-sub">Featured</div>
+                <div class="cs-ia-sub">Categories</div>
+                <div class="cs-ia-sub">Nearby</div>
+              </div>
+            </div>
+            <div class="cs-ia-branch">
+              <div class="cs-ia-node">Search</div>
+              <div class="cs-ia-sub-nodes">
+                <div class="cs-ia-sub">Cuisine Filter</div>
+                <div class="cs-ia-sub">Restaurant List</div>
+              </div>
+            </div>
+            <div class="cs-ia-branch">
+              <div class="cs-ia-node">Orders</div>
+              <div class="cs-ia-sub-nodes">
+                <div class="cs-ia-sub">Active Orders</div>
+                <div class="cs-ia-sub">History</div>
+              </div>
+            </div>
+            <div class="cs-ia-branch">
+              <div class="cs-ia-node">Profile</div>
+              <div class="cs-ia-sub-nodes">
+                <div class="cs-ia-sub">Addresses</div>
+                <div class="cs-ia-sub">Settings</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 User Flow -->
+    <section class="cs-section" aria-labelledby="cs-flow-heading">
+      <div class="cs-section-num" aria-hidden="true">05</div>
+      <h2 class="cs-section-title" id="cs-flow-heading">Core User Flow</h2>
+      <div class="cs-section-body">
+        <p>
+          The primary ordering flow was designed to be completed in as few steps
+          as possible without sacrificing necessary confirmation steps.
+        </p>
+        <div class="cs-flow">
+          <div class="cs-flow-step">
+            <div class="cs-flow-step-num">1</div>
+            <div class="cs-flow-step-label">Onboarding<br><span>Location setup</span></div>
+          </div>
+          <div class="cs-flow-arrow" aria-hidden="true">&#8594;</div>
+          <div class="cs-flow-step">
+            <div class="cs-flow-step-num">2</div>
+            <div class="cs-flow-step-label">Browse Home<br><span>Find a restaurant</span></div>
+          </div>
+          <div class="cs-flow-arrow" aria-hidden="true">&#8594;</div>
+          <div class="cs-flow-step">
+            <div class="cs-flow-step-num">3</div>
+            <div class="cs-flow-step-label">View Menu<br><span>Select items</span></div>
+          </div>
+          <div class="cs-flow-arrow" aria-hidden="true">&#8594;</div>
+          <div class="cs-flow-step">
+            <div class="cs-flow-step-num">4</div>
+            <div class="cs-flow-step-label">Cart &amp; Review<br><span>Check total</span></div>
+          </div>
+          <div class="cs-flow-arrow" aria-hidden="true">&#8594;</div>
+          <div class="cs-flow-step">
+            <div class="cs-flow-step-num">5</div>
+            <div class="cs-flow-step-label">Checkout<br><span>Pay &amp; confirm</span></div>
+          </div>
+          <div class="cs-flow-arrow" aria-hidden="true">&#8594;</div>
+          <div class="cs-flow-step cs-flow-step--end">
+            <div class="cs-flow-step-num">6</div>
+            <div class="cs-flow-step-label">Order Tracking<br><span>Live status</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 Wireframes -->
+    <section class="cs-section" aria-labelledby="cs-wireframes-heading">
+      <div class="cs-section-num" aria-hidden="true">06</div>
+      <h2 class="cs-section-title" id="cs-wireframes-heading">Wireframes</h2>
+      <div class="cs-section-body">
+        <p>
+          Wireframes were developed in Figma, starting with low-fidelity sketches
+          to establish layout hierarchy and screen flow, then iterated to mid-fidelity
+          to test component spacing and readability before moving to the final UI.
+        </p>
+      </div>
+      <!-- Wireframe mockup grid -->
+      <div class="cs-wireframe-grid" aria-label="Wireframe screens for Yumzy app">
+        <div class="cs-wf-screen">
+          <div class="cs-wf-label">Home</div>
+          <div class="cs-wf-phone">
+            <div class="cs-wf-status-bar"></div>
+            <div class="cs-wf-content">
+              <div class="cs-wf-block cs-wf-block--sm"></div>
+              <div class="cs-wf-block cs-wf-block--search"></div>
+              <div class="cs-wf-row">
+                <div class="cs-wf-chip"></div>
+                <div class="cs-wf-chip"></div>
+                <div class="cs-wf-chip"></div>
+              </div>
+              <div class="cs-wf-block cs-wf-block--banner"></div>
+              <div class="cs-wf-block cs-wf-block--sm"></div>
+              <div class="cs-wf-row">
+                <div class="cs-wf-card-sm"></div>
+                <div class="cs-wf-card-sm"></div>
+              </div>
+            </div>
+            <div class="cs-wf-nav-bar">
+              <div class="cs-wf-nav-item cs-wf-nav-item--active"></div>
+              <div class="cs-wf-nav-item"></div>
+              <div class="cs-wf-nav-item"></div>
+              <div class="cs-wf-nav-item"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-wf-screen">
+          <div class="cs-wf-label">Restaurant</div>
+          <div class="cs-wf-phone">
+            <div class="cs-wf-status-bar"></div>
+            <div class="cs-wf-hero-img"></div>
+            <div class="cs-wf-content">
+              <div class="cs-wf-block cs-wf-block--md"></div>
+              <div class="cs-wf-block cs-wf-block--sm"></div>
+              <div class="cs-wf-row">
+                <div class="cs-wf-chip cs-wf-chip--active"></div>
+                <div class="cs-wf-chip"></div>
+              </div>
+              <div class="cs-wf-menu-item"></div>
+              <div class="cs-wf-menu-item"></div>
+              <div class="cs-wf-menu-item"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-wf-screen">
+          <div class="cs-wf-label">Checkout</div>
+          <div class="cs-wf-phone">
+            <div class="cs-wf-status-bar"></div>
+            <div class="cs-wf-content">
+              <div class="cs-wf-block cs-wf-block--sm"></div>
+              <div class="cs-wf-section-card"></div>
+              <div class="cs-wf-section-card"></div>
+              <div class="cs-wf-section-card"></div>
+              <div class="cs-wf-block cs-wf-block--divider"></div>
+              <div class="cs-wf-block cs-wf-block--sm"></div>
+              <div class="cs-wf-block cs-wf-block--md"></div>
+            </div>
+            <div class="cs-wf-cta-bar">
+              <div class="cs-wf-cta-btn"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-wf-screen">
+          <div class="cs-wf-label">Order Confirmation</div>
+          <div class="cs-wf-phone">
+            <div class="cs-wf-status-bar"></div>
+            <div class="cs-wf-content cs-wf-content--centered">
+              <div class="cs-wf-success-icon"></div>
+              <div class="cs-wf-block cs-wf-block--lg" style="margin:0 auto 8px;"></div>
+              <div class="cs-wf-block cs-wf-block--md" style="margin:0 auto 20px;"></div>
+              <div class="cs-wf-block cs-wf-block--card" style="text-align:left;"></div>
+              <div class="cs-wf-cta-row">
+                <div class="cs-wf-cta-btn-sm"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 Final UI -->
+    <section class="cs-section" aria-labelledby="cs-ui-heading">
+      <div class="cs-section-num" aria-hidden="true">07</div>
+      <h2 class="cs-section-title" id="cs-ui-heading">Final UI</h2>
+      <div class="cs-section-body">
+        <p>
+          The final high-fidelity screens were designed in Figma with a focus on
+          clear typographic hierarchy, accessible touch targets, and a consistent
+          component system.
+        </p>
+        <p>
+          The colour system uses a warm white base (#FAFAFA) with a bold primary
+          accent for interactive elements (call-to-action buttons, active states)
+          and a neutral grey palette for supporting text and card surfaces. The
+          intent was a clean, food-positive visual tone without the clutter of
+          excessive promotions or decorative elements.
+        </p>
+      </div>
+      <!-- Final UI visual placeholder -->
+      <div class="cs-final-ui-band" aria-label="Final Yumzy UI screens">
+        <div class="cs-final-phone">
+          <div class="cs-fp-screen">
+            <div class="cs-fp-top">
+              <div class="cs-fp-avatar"></div>
+              <div class="cs-fp-greeting">
+                <div class="cs-fp-line cs-fp-line--xs"></div>
+                <div class="cs-fp-line cs-fp-line--sm"></div>
+              </div>
+            </div>
+            <div class="cs-fp-search"></div>
+            <div class="cs-fp-chips">
+              <div class="cs-fp-chip cs-fp-chip--active">Burgers</div>
+              <div class="cs-fp-chip">Pizza</div>
+              <div class="cs-fp-chip">Indian</div>
+            </div>
+            <div class="cs-fp-card-row">
+              <div class="cs-fp-card">
+                <div class="cs-fp-card-img"></div>
+                <div class="cs-fp-card-body">
+                  <div class="cs-fp-line cs-fp-line--md"></div>
+                  <div class="cs-fp-line cs-fp-line--xs"></div>
+                </div>
+              </div>
+              <div class="cs-fp-card">
+                <div class="cs-fp-card-img" style="background:#FFE0B2;"></div>
+                <div class="cs-fp-card-body">
+                  <div class="cs-fp-line cs-fp-line--md"></div>
+                  <div class="cs-fp-line cs-fp-line--xs"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cs-final-phone cs-final-phone--detail">
+          <div class="cs-fp-screen">
+            <div class="cs-fp-detail-hero"></div>
+            <div class="cs-fp-detail-body">
+              <div class="cs-fp-line cs-fp-line--lg" style="height:14px;"></div>
+              <div class="cs-fp-line cs-fp-line--md" style="margin-top:6px;"></div>
+              <div class="cs-fp-stars"></div>
+              <div class="cs-fp-line cs-fp-line--sm" style="margin-top:16px;"></div>
+              <div class="cs-fp-line cs-fp-line--sm" style="width:80%;"></div>
+              <div class="cs-fp-line cs-fp-line--sm" style="width:60%;"></div>
+              <div class="cs-fp-cta-bar">
+                <div class="cs-fp-cta-btn">Add to Cart</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cs-final-phone cs-final-phone--cart">
+          <div class="cs-fp-screen">
+            <div class="cs-fp-cart-header">
+              <div class="cs-fp-line cs-fp-line--md" style="height:14px;"></div>
+              <div class="cs-fp-line cs-fp-line--xs" style="margin-top:6px;"></div>
+            </div>
+            <div class="cs-fp-cart-list">
+              <div class="cs-fp-cart-row">
+                <div class="cs-fp-cart-thumb"></div>
+                <div class="cs-fp-cart-info">
+                  <div class="cs-fp-line cs-fp-line--md"></div>
+                  <div class="cs-fp-line cs-fp-line--xs"></div>
+                </div>
+                <div class="cs-fp-cart-qty">2</div>
+              </div>
+              <div class="cs-fp-cart-row">
+                <div class="cs-fp-cart-thumb" style="background:#EAF4FC;"></div>
+                <div class="cs-fp-cart-info">
+                  <div class="cs-fp-line cs-fp-line--md"></div>
+                  <div class="cs-fp-line cs-fp-line--xs"></div>
+                </div>
+                <div class="cs-fp-cart-qty">1</div>
+              </div>
+            </div>
+            <div class="cs-fp-cart-total">
+              <div class="cs-fp-total-row">
+                <div class="cs-fp-line cs-fp-line--sm" style="width:40%;"></div>
+                <div class="cs-fp-line cs-fp-line--sm" style="width:25%;"></div>
+              </div>
+              <div class="cs-fp-checkout-btn">Proceed to Checkout</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 Design System -->
+    <section class="cs-section" aria-labelledby="cs-ds-heading">
+      <div class="cs-section-num" aria-hidden="true">08</div>
+      <h2 class="cs-section-title" id="cs-ds-heading">Design System &amp; Components</h2>
+      <div class="cs-section-body">
+        <p>
+          A consistent component library was built in Figma to maintain design
+          coherence across all screens. Key components include:
+        </p>
+        <div class="cs-components-grid">
+          <div class="cs-comp-item">
+            <div class="cs-comp-preview">
+              <div class="cs-comp-btn cs-comp-btn--primary">Order Now</div>
+            </div>
+            <div class="cs-comp-name">Primary CTA</div>
+          </div>
+          <div class="cs-comp-item">
+            <div class="cs-comp-preview">
+              <div class="cs-comp-btn cs-comp-btn--outline">View Menu</div>
+            </div>
+            <div class="cs-comp-name">Secondary Button</div>
+          </div>
+          <div class="cs-comp-item">
+            <div class="cs-comp-preview cs-comp-preview--chips">
+              <div class="cs-comp-chip cs-comp-chip--active">Burgers</div>
+              <div class="cs-comp-chip">Pizza</div>
+              <div class="cs-comp-chip">Sushi</div>
+            </div>
+            <div class="cs-comp-name">Category Filter Chips</div>
+          </div>
+          <div class="cs-comp-item">
+            <div class="cs-comp-preview">
+              <div class="cs-comp-card">
+                <div class="cs-comp-card-img"></div>
+                <div class="cs-comp-card-body">
+                  <div class="cs-fp-line cs-fp-line--md"></div>
+                  <div class="cs-fp-line cs-fp-line--xs" style="margin-top:4px;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="cs-comp-name">Restaurant Card</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09 Reflection -->
+    <section class="cs-section cs-section--last" aria-labelledby="cs-reflection-heading">
+      <div class="cs-section-num" aria-hidden="true">09</div>
+      <h2 class="cs-section-title" id="cs-reflection-heading">Reflection &amp; Takeaways</h2>
+      <div class="cs-section-body">
+        <p>
+          Yumzy was a useful project for practising the discipline of keeping
+          an interface genuinely simple rather than just visually minimal. The
+          biggest design challenge was the home screen &mdash; balancing discoverability
+          (showing enough to help users find something) with focus (not overwhelming
+          them with options immediately).
+        </p>
+        <p>
+          The checkout flow taught me to think more carefully about micro-copy:
+          small label decisions (like &ldquo;Confirm &amp; Pay&rdquo; vs &ldquo;Place Order&rdquo;)
+          meaningfully affect how confident a user feels at the critical moment
+          of committing to a purchase.
+        </p>
+        <p>
+          If I were to continue developing this project, I would prototype the
+          checkout flow for usability testing to identify where users hesitate,
+          and refine the order tracking screen to provide better real-time feedback.
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Project navigation -->
+  <div class="cs-project-nav">
+    <div class="container">
+      <div class="cs-project-nav-inner">
+        <a href="../index.html#uiux-design" class="cs-nav-prev">&#8592; All Work</a>
+        <a href="campusconnect.html" class="cs-nav-next">CampusConnect &#8594;</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-name">Chandru Duraikannan</span>
+        <span class="footer-role">UI/UX Designer</span>
+      </div>
+      <div class="footer-right">
+        <span class="footer-note">Based in Salem, India</span>
+        <span class="footer-copy">&copy; 2024</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

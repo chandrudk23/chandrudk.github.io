@@ -277,8 +277,6 @@
   font-weight: 600;
   color: var(--text-mid);
   transition: color var(--transition);
-}
-}
 .cs-nav-prev:hover,
 .cs-nav-next:hover {
   color: var(--accent-dark);
@@ -549,6 +547,10 @@
   .cs-flow-arrow {
     transform: rotate(90deg);
     align-self: center;
+  }
+
+  .cs-takeaways-block {
+    padding: 20px 18px;
   }
 
   .cs-nav-footer,
